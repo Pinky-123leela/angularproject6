@@ -1,0 +1,32 @@
+<p>edit-customer works!</p>
+<div class="col-md-6 user-container">
+    <h2 class="text-center">Edit User</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <div class="hidden">
+        <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id" readonly="true">
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" formControlName="name" placeholder="name" name="name" class="form-control" id="name" >
+      </div>
+  
+      
+      <div class="form-group">
+        <label for="Password">Password</label>
+        <input formControlName="password" placeholder="password" name="password" class="form-control" id="password">
+      </div>
+  
+      <div class="form-group">
+        <label for="Role">Role</label>
+        <input type="text" formControlName="role" placeholder="role" name="role" class="form-control" id="role">
+      </div>
+
+      <div class="form-group">
+        <label for="MobileNumber">MobileNumber</label>
+        <input type="text" formControlName="mobileNumber" placeholder="mobileNumber" name="mobileNumber" class="form-control" id="mobileNumber">
+      </div>
+  
+      
+      <input type="submit" value="Update" class="btn btn-success">
+    </form>
+  </div>
